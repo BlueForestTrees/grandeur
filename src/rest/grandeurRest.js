@@ -1,10 +1,8 @@
-import {getGrandeurs} from "unit-manip"
-
 import {Router} from "express-blueforest"
-const router = Router()
 import {run} from 'express-blueforest'
-import {loadGrandeurs} from "./grandeurService"
+import {loadGrandeurs} from "../grandeur/grandeurService"
 
+const router = Router()
 const grandeurs = loadGrandeurs()
 
 router.get('/api/grandeurs',run(()=>grandeurs))
