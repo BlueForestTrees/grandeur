@@ -8,7 +8,7 @@ describe('GET Grandeurs', function () {
 
     it('get grandeurs', withTest({
             req: {
-                url: "/api/grandeurs"
+                url: "/api/grandeur"
             },
             res: {
                 bodypath:[

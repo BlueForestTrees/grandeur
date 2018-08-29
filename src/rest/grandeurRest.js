@@ -5,6 +5,6 @@ import {loadGrandeurs} from "../grandeur/grandeurService"
 const router = Router()
 const grandeurs = loadGrandeurs()
 
-router.get('/api/grandeurs',run(()=>grandeurs))
+router.get('/api/grandeur',run(()=>grandeurs))
 
 module.exports = router
