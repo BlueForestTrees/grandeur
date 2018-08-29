@@ -1,10 +1,9 @@
-import {init, request, withTest} from "test-api-express-mongo"
+import {initApi, withTest} from "test-api-express-mongo"
 import api from "../src"
-import ENV from "../src/env"
 
 describe('GET Grandeurs', function () {
 
-    beforeEach(init(api, ENV, {}))
+    beforeEach(initApi(api))
 
     it('get grandeurs', withTest({
             req: {

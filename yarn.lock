@@ -3160,9 +3160,9 @@ term-size@^1.2.0:
   dependencies:
     execa "^0.7.0"
 
-test-api-express-mongo@1.0.13:
-  version "1.0.13"
-  resolved "https://registry.yarnpkg.com/test-api-express-mongo/-/test-api-express-mongo-1.0.13.tgz#53c5493744dc47386fdca2886cc6719200af64e2"
+test-api-express-mongo@1.0.16:
+  version "1.0.16"
+  resolved "https://registry.yarnpkg.com/test-api-express-mongo/-/test-api-express-mongo-1.0.16.tgz#7e156b09934d0cba247225395b140d2322a3281f"
   dependencies:
     chai "4.1.2"
     chai-http "4.0.0"
