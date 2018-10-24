@@ -8,7 +8,7 @@
   "license": "MIT",
   "scripts": {
     "start": "node index.js",
-    "build": "rimraf dist && babel src --out-dir dist/js && copyfiles etc/** dist",
+    "build": "rimraf dist && babel src --out-dir dist/js",
     "dev": "node --version && cross-env DEBUG=api:* PORT=8083 REST_PATH=src/rest nodemon src/index.js --exec babel-node",
     "test": "cross-env DEBUG=api:*,test:* NODE_ENV=test PORT=9003 REST_PATH=src/rest mocha --recursive --require babel-register --exit \"test/**/*.js\""
   },
