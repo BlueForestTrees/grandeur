@@ -1,6 +1,6 @@
 {
   "name": "grandeur",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Les grandeurs et unités utilisables dans BlueForest",
   "main": "dist/index.js",
   "repository": "https://github.com/BlueForestTrees/grandeur.git",
