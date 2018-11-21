@@ -62,8 +62,9 @@ export const loadGrandeurs = () => Promise.resolve(
             unit("min", "Minute", 60),
             unit("h", "Heure", 60 * 60),
             unit("j", "Jour", 60 * 60 * 24),
-            unit("mois", "Mois", 60 * 60 * 24 * 30 * 355),
-            unit("an", "Année", 60 * 60 * 24 * 30 * 355 * 12)
+            unit("sem", "Semaine", 60 * 60 * 24 * 7),
+            unit("mois", "Mois", 60 * 60 * 24 * 365, 242190517 / 12),
+            unit("an", "Année", 60 * 60 * 24 * 365, 242190517)
         ]),
         grandeur("Mass", "Masse (g, kg...)", [
             unit("mg", "Milligramme", 0.000001),
