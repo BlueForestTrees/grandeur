@@ -50,12 +50,12 @@ export const loadGrandeurs = () => Promise.resolve(
             unit("Item(s)", "items", 1)
         ]),
         grandeur("Volu", "Volume (L, m3...)", [
-            unit("goutte", "Goutte", 0.001 * 20000),
+            unit("m3", "Mètre-cube", 1),
             unit("L", "Litre", 0.001),
             unit("dL", "Déci-litre", 0.001 * 0.1),
             unit("cL", "Centi-litre", 0.001 * 0.01),
             unit("mL", "Milli-litre", 0.001 * 0.001),
-            unit("m3", "Mètre-cube", 1),
+            unit("goutte", "Goutte", 0.001 / 20232),
         ]),
         grandeur("Duré", "Durée (sec, min, h...)", [
             unit("sec", "Seconde", 1),
@@ -63,8 +63,8 @@ export const loadGrandeurs = () => Promise.resolve(
             unit("h", "Heure", 60 * 60),
             unit("j", "Jour", 60 * 60 * 24),
             unit("sem", "Semaine", 60 * 60 * 24 * 7),
-            unit("mois", "Mois", 60 * 60 * 24 * 365, 242190517 / 12),
-            unit("an", "Année", 60 * 60 * 24 * 365, 242190517)
+            unit("mois", "Mois", 60 * 60 * 24 * 365.242190517 / 12),
+            unit("an", "Année", 60 * 60 * 24 * 365.242190517)
         ]),
         grandeur("Mass", "Masse (g, kg...)", [
             unit("mg", "Milligramme", 0.000001),
